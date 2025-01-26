@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course Platform</title>
+  <style>
+    /* Reset some default styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Body and background color */
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #1A1A1A; /* Deep, dark background */
+      color: #EAEAEA; /* Light text for contrast */
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    /* Header Section */
+    header {
+      background-color: #121212; /* Dark header background */
+      color: #F39C12; /* Neon gold accents */
+      padding: 50px 20px;
+      text-align: center;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    header h1 {
+      font-size: 50px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 20px;
+    }
+
+    /* Navigation */
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    nav ul li {
+      margin-left: 30px;
+    }
+
+    nav ul li a {
+      color: #EAEAEA;
+      text-decoration: none;
+      font-size: 18px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding-bottom: 5px;
+      transition: color 0.3s, border-bottom 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #F39C12;
+      border-bottom: 2px solid #F39C12; /* Neon hover effect */
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(45deg, #16A085, #F39C12); /* Neon gradient background */
+      color: #FFFFFF;
+      text-align: center;
+      padding: 120px 20px;
+      border-bottom: 4px solid #F39C12;
+    }
+
+    .hero h2 {
+      font-size: 50px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+
+    .hero p {
+      font-size: 22px;
+      margin-bottom: 30px;
+      line-height: 1.5;
+    }
+
+    .hero .btn {
+      background-color: #F39C12; /* Neon gold */
+      color: #121212;
+      padding: 15px 40px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      transition: background-color 0.3s;
+    }
+
+    .hero .btn:hover {
+      background-color: #F1C40F; /* Lighter gold on hover */
+    }
+
+    /* Course Info Section */
+    .course-info {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin: 60px 20px;
+    }
+
+    .course-box {
+      background-color: #2C3E50; /* Dark blue-grey */
+      width: 30%;
+      margin-bottom: 30px;
+      padding: 40px;
+      text-align: center;
+      border-radius: 15px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .course-box:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    }
+
+    .course-box h3 {
+      font-size: 28px;
+      margin-bottom: 15px;
+      color: #F39C12; /* Neon gold for headings */
+    }
+
+    .course-box p {
+      font-size: 16px;
+      color: #EAEAEA;
+    }
+
+    /* Testimonials Section */
+    .testimonials {
+      background-color: #1A1A1A; /* Same dark theme for contrast */
+      padding: 80px 20px;
+      text-align: center;
+      color: #EAEAEA;
+    }
+
+    .testimonials h2 {
+      font-size: 36px;
+      margin-bottom: 30px;
+      text-transform: uppercase;
+      color: #F39C12;
+    }
+
+    .testimonial-card {
+      background-color: #2C3E50; /* Dark blue-grey */
+      padding: 40px;
+      width: 300px;
+      margin: 20px;
+      border-radius: 10px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .testimonial-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    }
+
+    .testimonial-card img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    .testimonial-card h3 {
+      font-size: 24px;
+      margin-bottom: 15px;
+      color: #F39C12;
+    }
+
+    .testimonial-card p {
+      font-size: 16px;
+      color: #EAEAEA;
+    }
+
+    /* Footer Section */
+    footer {
+      background-color: #121212; /* Dark footer */
+      color: #EAEAEA;
+      text-align: center;
+      padding: 30px;
+      margin-top: 50px;
+    }
+
+    footer p {
+      font-size: 16px;
+    }
+
+    footer a {
+      color: #F39C12;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: #F1C40F;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Course Platform</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Courses</a></li>
+        <li><a href="#">Instructors</a></li>
+        <li><a href="#">Testimonials</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Unlock Your Future with Our Courses</h2>
+    <p>Join our platform to access premium courses from industry leaders and become the expert you've always wanted to be.</p>
+    <a href="#" class="btn">Start Learning</a>
+  </section>
+
+  <section class="course-info">
+    <div class="course-box">
+      <h3>Web Development</h3>
+      <p>Learn how to build modern websites with HTML, CSS, JavaScript, and beyond.</p>
+    </div>
+    <div class="course-box">
+      <h3>Data Science</h3>
+      <p>Master data analysis, machine learning, and visualization with Python and R.</p>
+    </div>
+    <div class="course-box">
+      <h3>Digital Marketing</h3>
+      <p>Learn how to grow businesses using digital strategies like SEO, social media, and more.</p>
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <h2>What Our Learners Say</h2>
+    <div class="testimonial-card">
+      <img src="https://via.placeholder.com/300" alt="Learner Testimonial">
+      <h3>John Doe</h3>
+      <p>"The courses here gave me the skills I needed to transition into a new career. The instructors are top-notch!"</p>
+    </div>
+    <div class="testimonial-card">
+      <img src="https://via.placeholder.com/300" alt="Learner Testimonial">
+      <h3>Jane Smith</h3>
+      <p>"I gained practical experience through real-world projects that I can now showcase to employers."</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Course Platform. All rights reserved.</p>
+    <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+  </footer>
+
+</body>
+</html>
