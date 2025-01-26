@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Affiliate Marketing</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background: #1F1F1F;
+            color: #E8E8E8;
+        }
+        header {
+            background: #121212;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+        }
+        header h1 {
+            font-size: 2.5rem;
+            color: #FFD700;
+        }
+        header nav a {
+            text-decoration: none;
+            color: #E8E8E8;
+            margin: 0 15px;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+        header nav a:hover {
+            color: #FFD700;
+        }
+        .hero {
+            background: linear-gradient(135deg, #FFD700, #FF4500);
+            color: #121212;
+            text-align: center;
+            padding: 100px 20px;
+            clip-path: ellipse(90% 80% at 50% 0%);
+        }
+        .hero h2 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 30px;
+        }
+        .hero button {
+            background: #FF4500;
+            border: none;
+            color: #fff;
+            font-size: 1rem;
+            padding: 12px 25px;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+        .hero button:hover {
+            background: #FFD700;
+            transform: scale(1.05);
+        }
+        .about {
+            padding: 60px 20px;
+            text-align: center;
+            background: #222222;
+        }
+        .about h3 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #FFD700;
+        }
+        .about p {
+            font-size: 1rem;
+            margin: 0 auto;
+            max-width: 800px;
+            line-height: 1.6;
+            color: #E8E8E8;
+        }
+        .strategies {
+            background: #1F1F1F;
+            color: #E8E8E8;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .strategies h3 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: #FF4500;
+        }
+        .strategy-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .strategy-card {
+            background: #222222;
+            padding: 20px;
+            border-radius: 15px;
+            width: 300px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .strategy-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+        }
+        .strategy-card h4 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #FFD700;
+        }
+        .strategy-card p {
+            font-size: 0.9rem;
+            color: #B0B0B0;
+        }
+        .cta {
+            background: #FF4500;
+            padding: 50px 20px;
+            text-align: center;
+            color: #121212;
+        }
+        .cta h3 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .cta a {
+            text-decoration: none;
+            background: #FFD700;
+            color: #121212;
+            padding: 12px 30px;
+            border-radius: 30px;
+            font-size: 1rem;
+            font-weight: bold;
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+        .cta a:hover {
+            background: #FF4500;
+            color: #fff;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #121212;
+            color: #E8E8E8;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>AffiliatePro</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#strategies">Strategies</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Maximize Your Earnings</h2>
+        <p>Join the best affiliate marketing strategies and grow your revenue streams effortlessly.</p>
+        <button>Start Now</button>
+    </section>
+
+    <section id="about" class="about">
+        <h3>What is Affiliate Marketing?</h3>
+        <p>
+            Affiliate marketing is a performance-based strategy where you earn commissions by promoting products or services. Whether you're a seasoned marketer or a beginner, our resources and tips will help you succeed.
+        </p>
+    </section>
+
+    <section id="strategies" class="strategies">
+        <h3>Winning Strategies</h3>
+        <div class="strategy-grid">
+            <div class="strategy-card">
+                <h4>Content Marketing</h4>
+                <p>Create valuable content to attract and retain audiences while promoting affiliate products.</p>
+            </div>
+            <div class="strategy-card">
+                <h4>Email Campaigns</h4>
+                <p>Build an email list and send personalized offers to increase affiliate sales.</p>
+            </div>
+            <div class="strategy-card">
+                <h4>Social Media Ads</h4>
+                <p>Utilize platforms like Facebook and Instagram to run targeted ad campaigns.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="cta" class="cta">
+        <h3>Ready to Start Your Affiliate Journey?</h3>
+        <a href="#">Join Us Today</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 AffiliatePro. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
