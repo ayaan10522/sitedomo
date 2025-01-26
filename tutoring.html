@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elite Tutoring</title>
+  <style>
+    /* Resetting default styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #F1F1F1; /* Light background */
+      color: #333;
+      line-height: 1.6;
+      overflow-x: hidden;
+      font-size: 16px;
+    }
+
+    /* Header Section */
+    header {
+      background-color: #1A2A6C; /* Bold deep blue */
+      color: #fff;
+      padding: 60px 20px;
+      text-align: center;
+      position: relative;
+    }
+
+    header h1 {
+      font-size: 50px;
+      font-weight: 800;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    header p {
+      font-size: 22px;
+      font-weight: 300;
+      margin-bottom: 40px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+    }
+
+    nav ul li {
+      margin-left: 40px;
+    }
+
+    nav ul li a {
+      color: #F1F1F1;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #E74C3C; /* Red for hover */
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(135deg, #ff8a00, #e52e71); /* Gradient from orange to pink */
+      color: #fff;
+      text-align: center;
+      padding: 120px 20px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+    }
+
+    .hero h2 {
+      font-size: 60px;
+      margin-bottom: 20px;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+
+    .hero p {
+      font-size: 24px;
+      margin-bottom: 30px;
+      font-weight: 400;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .hero .btn {
+      background-color: #E74C3C; /* Bright red */
+      color: #fff;
+      padding: 18px 50px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-size: 20px;
+      font-weight: 600;
+      transition: background-color 0.3s;
+    }
+
+    .hero .btn:hover {
+      background-color: #C0392B; /* Darker red */
+    }
+
+    /* Tutors Section */
+    .tutors {
+      display: flex;
+      justify-content: space-between;
+      margin: 60px 20px;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    .tutor-card {
+      background-color: #fff;
+      width: 30%;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      position: relative;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .tutor-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+    }
+
+    .tutor-card img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+
+    .tutor-card h3 {
+      font-size: 28px;
+      color: #333;
+      margin-bottom: 15px;
+      font-weight: 600;
+    }
+
+    .tutor-card p {
+      font-size: 18px;
+      color: #7F8C8D;
+      margin-bottom: 20px;
+    }
+
+    .tutor-card .btn {
+      background-color: #1A2A6C;
+      color: #fff;
+      padding: 12px 25px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      transition: background-color 0.3s;
+    }
+
+    .tutor-card .btn:hover {
+      background-color: #34495E;
+    }
+
+    /* Benefits Section */
+    .benefits {
+      display: flex;
+      justify-content: space-between;
+      margin: 60px 20px;
+      gap: 40px;
+      text-align: center;
+    }
+
+    .benefit-card {
+      background-color: #fff;
+      width: 30%;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+      position: relative;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .benefit-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+    }
+
+    .benefit-card h3 {
+      font-size: 28px;
+      color: #1A2A6C;
+      margin-bottom: 20px;
+    }
+
+    .benefit-card p {
+      font-size: 18px;
+      color: #7F8C8D;
+    }
+
+    /* Footer Section */
+    footer {
+      background-color: #212F3C; /* Deep dark blue */
+      color: #F1F1F1;
+      text-align: center;
+      padding: 40px 20px;
+      margin-top: 60px;
+    }
+
+    footer p {
+      font-size: 16px;
+    }
+
+    footer a {
+      color: #E74C3C;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: #C0392B;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Elite Tutoring Services</h1>
+    <p>Your path to academic excellence begins here</p>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Tutors</a></li>
+        <li><a href="#">Courses</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Personalized Learning, Unmatched Results</h2>
+    <p>Join our network of tutors who specialize in a variety of subjects. Unlock your potential with one-on-one sessions, flexible schedules, and dedicated learning.</p>
+    <a href="#" class="btn">Get Started</a>
+  </section>
+
+  <section class="tutors">
+    <div class="tutor-card">
+      <img src="https://via.placeholder.com/120" alt="Tutor 1">
+      <h3>Jane Doe</h3>
+      <p>Specializing in Mathematics, SAT Prep, and Physics</p>
+      <a href="#" class="btn">Book a Session</a>
+    </div>
+    <div class="tutor-card">
+      <img src="https://via.placeholder.com/120" alt="Tutor 2">
+      <h3>John Smith</h3>
+      <p>Expert in Chemistry, Biology, and Advanced Calculus</p>
+      <a href="#" class="btn">Book a Session</a>
+    </div>
+    <div class="tutor-card">
+      <img src="https://via.placeholder.com/120" alt="Tutor 3">
+      <h3>Emily Brown</h3>
+      <p>Literature, History, and Writing Specialist</p>
+      <a href="#" class="btn">Book a Session</a>
+    </div>
+  </section>
+
+  <section class="benefits">
+    <div class="benefit-card">
+      <h3>Customized Sessions</h3>
+      <p>Get lessons tailored to your learning style and pace for optimal growth.</p>
+    </div>
+    <div class="benefit-card">
+      <h3>Experienced Tutors</h3>
+      <p>Our tutors are highly qualified and experienced in their fields of expertise.</p>
+    </div>
+    <div class="benefit-card">
+      <h3>Flexible Scheduling</h3>
+      <p>Choose the schedule that works best for you, with online and in-person options.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Elite Tutoring Services. All rights reserved.</p>
+    <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+  </footer>
+
+</body>
+</html>
