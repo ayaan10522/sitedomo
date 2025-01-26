@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>University</title>
+  <title>Future University</title>
   <style>
     /* Reset some default styles */
     * {
@@ -15,23 +15,25 @@
     /* Body and background color */
     body {
       font-family: 'Arial', sans-serif;
-      background-color: #F7F7F7; /* Light neutral background */
-      color: #333; /* Dark text for good readability */
+      background-color: #1E1E1E; /* Dark background for a futuristic look */
+      color: #EAEAEA; /* Light text for contrast */
       line-height: 1.6;
     }
 
     /* Navbar styling */
     header {
-      background-color: #34495E; /* Dark neutral background */
-      color: #ECF0F1; /* Light text */
-      padding: 20px;
+      background-color: #0D0D0D; /* Darker background for the header */
+      color: #FFF;
+      padding: 30px 20px;
       text-align: center;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
     }
 
     header h1 {
-      font-size: 32px;
+      font-size: 40px;
       font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
     }
 
     /* Navigation bar */
@@ -47,7 +49,7 @@
     }
 
     nav ul li a {
-      color: #ECF0F1;
+      color: #EAEAEA;
       text-decoration: none;
       font-size: 18px;
       text-transform: uppercase;
@@ -55,115 +57,128 @@
     }
 
     nav ul li a:hover {
-      color: #E67E22; /* Warm neutral color on hover */
+      color: #3498DB; /* Futuristic blue on hover */
     }
 
     /* Hero Section */
     .hero {
-      background-color: #BDC3C7; /* Light grey-blue background */
-      color: #34495E; /* Darker text */
+      background: linear-gradient(45deg, #2C3E50, #16A085); /* Vibrant gradient */
+      color: #ECF0F1;
       text-align: center;
-      padding: 100px 20px;
+      padding: 150px 20px;
+      border-bottom: 5px solid #FFF;
     }
 
     .hero h2 {
-      font-size: 48px;
-      font-weight: 600;
+      font-size: 60px;
+      font-weight: 700;
       margin-bottom: 20px;
+      text-transform: uppercase;
     }
 
     .hero p {
-      font-size: 20px;
+      font-size: 22px;
       margin-bottom: 30px;
       line-height: 1.5;
     }
 
     .hero .btn {
-      background-color: #E67E22; /* Warm neutral color */
-      color: #ECF0F1;
-      padding: 12px 40px;
-      border-radius: 30px;
+      background-color: #3498DB; /* Futuristic blue */
+      color: #EAEAEA;
+      padding: 15px 40px;
+      border-radius: 50px;
       text-decoration: none;
       font-size: 18px;
       text-transform: uppercase;
       font-weight: 600;
       letter-spacing: 1px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
     }
 
     .hero .btn:hover {
-      background-color: #D35400;
+      background-color: #2980B9;
     }
 
     /* University Info Section */
     .university-info {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
+      flex-wrap: wrap;
       margin: 60px 20px;
     }
 
     .info-box {
-      background-color: #FFFFFF; /* White cards */
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      background-color: #2C3E50; /* Darker card background */
       width: 30%;
-      border-radius: 8px;
-      padding: 30px;
+      margin-bottom: 30px;
+      padding: 40px;
       text-align: center;
-      transition: transform 0.3s ease;
+      border-radius: 15px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
     .info-box:hover {
-      transform: translateY(-10px); /* Lift effect on hover */
+      transform: translateY(-10px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
     }
 
     .info-box h3 {
-      font-size: 24px;
-      color: #34495E;
-      margin-bottom: 20px;
+      font-size: 28px;
+      margin-bottom: 15px;
+      color: #FFF;
     }
 
     .info-box p {
       font-size: 16px;
-      color: #7F8C8D;
+      color: #BDC3C7;
     }
 
     /* Campus Life Section */
     .campus-life {
-      background-color: #ECF0F1;
-      padding: 60px 20px;
+      background-color: #34495E; /* Dark blue-grey background */
+      padding: 80px 20px;
       text-align: center;
+      color: #ECF0F1;
     }
 
     .campus-life h2 {
       font-size: 36px;
       margin-bottom: 30px;
-      color: #34495E;
+      text-transform: uppercase;
     }
 
     .campus-life .activity {
       display: inline-block;
-      background-color: #FFFFFF;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      background-color: #2C3E50;
       padding: 40px;
       width: 300px;
-      margin: 10px;
-      border-radius: 8px;
+      margin: 20px;
+      border-radius: 15px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .campus-life .activity:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
     }
 
     .campus-life .activity img {
-      max-width: 100%;
-      border-radius: 8px;
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 20px;
     }
 
     .campus-life .activity h3 {
       font-size: 24px;
-      margin: 20px 0;
-      color: #34495E;
+      margin-bottom: 15px;
     }
 
     /* Footer Section */
     footer {
-      background-color: #34495E;
-      color: #ECF0F1;
+      background-color: #0D0D0D;
+      color: #EAEAEA;
       text-align: center;
       padding: 30px;
       margin-top: 50px;
@@ -174,12 +189,12 @@
     }
 
     footer a {
-      color: #E67E22;
+      color: #3498DB;
       text-decoration: none;
     }
 
     footer a:hover {
-      color: #D35400;
+      color: #2980B9;
     }
 
   </style>
@@ -187,7 +202,7 @@
 <body>
 
   <header>
-    <h1>Our University</h1>
+    <h1>Future University</h1>
     <nav>
       <ul>
         <li><a href="#">Home</a></li>
@@ -200,23 +215,23 @@
   </header>
 
   <section class="hero">
-    <h2>Welcome to Our Prestigious University</h2>
-    <p>Providing world-class education and fostering a community of excellence.</p>
+    <h2>Empowering the Leaders of Tomorrow</h2>
+    <p>Join the Future University and shape the future of innovation, technology, and leadership.</p>
     <a href="#" class="btn">Explore Programs</a>
   </section>
 
   <section class="university-info">
     <div class="info-box">
-      <h3>Academic Excellence</h3>
-      <p>We offer a wide range of degree programs, research opportunities, and expert faculty to help you succeed.</p>
+      <h3>Innovative Curriculum</h3>
+      <p>Our programs are designed to foster creativity and critical thinking, equipping you for the future.</p>
     </div>
     <div class="info-box">
       <h3>Global Community</h3>
-      <p>Join a diverse community of students, scholars, and professionals from around the world.</p>
+      <p>Our students come from all around the world, creating a diverse and inclusive campus environment.</p>
     </div>
     <div class="info-box">
-      <h3>State-of-the-Art Facilities</h3>
-      <p>Our campus boasts cutting-edge facilities, from modern classrooms to innovation labs.</p>
+      <h3>Future-Ready Facilities</h3>
+      <p>Experience cutting-edge technology and state-of-the-art labs that prepare you for tomorrow's challenges.</p>
     </div>
   </section>
 
@@ -224,23 +239,23 @@
     <h2>Campus Life</h2>
     <div class="activity">
       <img src="https://via.placeholder.com/300" alt="Student Activity">
-      <h3>Student Clubs</h3>
-      <p>Explore a variety of student organizations and extracurricular activities.</p>
+      <h3>Clubs & Organizations</h3>
+      <p>Engage in a wide variety of clubs and groups designed to expand your horizons.</p>
     </div>
     <div class="activity">
       <img src="https://via.placeholder.com/300" alt="Sports">
-      <h3>Sports & Recreation</h3>
-      <p>Stay active and engaged with our top-tier sports facilities and intramural leagues.</p>
+      <h3>Sports & Fitness</h3>
+      <p>Stay healthy and active with our top-notch sports facilities and programs.</p>
     </div>
     <div class="activity">
       <img src="https://via.placeholder.com/300" alt="Events">
-      <h3>University Events</h3>
-      <p>Attend lectures, seminars, cultural events, and more throughout the academic year.</p>
+      <h3>Events & Conferences</h3>
+      <p>Attend futuristic events, conferences, and hackathons that foster collaboration and innovation.</p>
     </div>
   </section>
 
   <footer>
-    <p>&copy; 2025 Our University. All rights reserved.</p>
+    <p>&copy; 2025 Future University. All rights reserved.</p>
     <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
   </footer>
 
