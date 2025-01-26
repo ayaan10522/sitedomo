@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startup Landing Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #ff6a00, #ee0979);
+            color: #fff;
+            overflow-x: hidden;
+        }
+        header {
+            background: #121212;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            font-size: 1.8rem;
+            color: #ff6a00;
+        }
+        header nav a {
+            text-decoration: none;
+            color: #fff;
+            margin: 0 15px;
+            font-weight: 500;
+            font-size: 1rem;
+        }
+        header nav a:hover {
+            color: #ff6a00;
+        }
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background: radial-gradient(circle at 50% 30%, #ff6a00, #ee0979);
+            color: #fff;
+            clip-path: ellipse(100% 75% at 50% 0%);
+        }
+        .hero h2 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+        .hero button {
+            background: #ff6a00;
+            border: none;
+            color: #fff;
+            font-size: 1rem;
+            padding: 12px 25px;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+        .hero button:hover {
+            background: #ee0979;
+        }
+        .features {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .features h3 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            color: #fff;
+        }
+        .features-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .feature-card {
+            background: #1e1e1e;
+            padding: 20px;
+            border-radius: 15px;
+            width: 250px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+        .feature-card h4 {
+            font-size: 1.5rem;
+            color: #ff6a00;
+            margin-bottom: 10px;
+        }
+        .feature-card p {
+            font-size: 1rem;
+            color: #fff;
+        }
+        .cta {
+            background: #121212;
+            padding: 50px 20px;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .cta h3 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+        .cta a {
+            background: #ff6a00;
+            color: #fff;
+            padding: 12px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: 0.3s ease;
+        }
+        .cta a:hover {
+            background: #ee0979;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #121212;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>InnovateX</h1>
+        <nav>
+            <a href="#features">Features</a>
+            <a href="#cta">Get Started</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Revolutionize Your Business</h2>
+        <p>Unleash the power of innovation with our groundbreaking solutions.</p>
+        <button>Get Started Now</button>
+    </section>
+
+    <section id="features" class="features">
+        <h3>Our Features</h3>
+        <div class="features-grid">
+            <div class="feature-card">
+                <h4>Scalable Solutions</h4>
+                <p>Adapt and grow with our cutting-edge technology tailored to your needs.</p>
+            </div>
+            <div class="feature-card">
+                <h4>Global Reach</h4>
+                <p>Expand your business globally with our reliable and efficient tools.</p>
+            </div>
+            <div class="feature-card">
+                <h4>24/7 Support</h4>
+                <p>Our team is here to help you anytime, anywhere, with round-the-clock assistance.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="cta" class="cta">
+        <h3>Ready to Join the Future?</h3>
+        <a href="#">Get Started Today</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 InnovateX. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
