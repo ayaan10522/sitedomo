@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Learning</title>
+  <style>
+    /* Reset some default styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Body and background color */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #F4F4F4; /* Light neutral background */
+      color: #333; /* Dark text for good readability */
+      line-height: 1.6;
+    }
+
+    /* Navbar styling */
+    header {
+      background-color: #2C3E50; /* Dark neutral background */
+      color: #ECF0F1; /* Light text */
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      font-size: 32px;
+      font-weight: bold;
+    }
+
+    /* Navigation bar */
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      margin-top: 15px;
+    }
+
+    nav ul li {
+      margin-left: 30px;
+    }
+
+    nav ul li a {
+      color: #ECF0F1;
+      text-decoration: none;
+      font-size: 18px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    nav ul li a:hover {
+      color: #E67E22; /* Warm neutral color on hover */
+    }
+
+    /* Hero Section */
+    .hero {
+      background-color: #BDC3C7; /* Light grey-blue background */
+      color: #34495E; /* Darker text */
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .hero h2 {
+      font-size: 48px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      margin-bottom: 30px;
+      line-height: 1.5;
+    }
+
+    .hero .btn {
+      background-color: #E67E22; /* Warm neutral color */
+      color: #ECF0F1;
+      padding: 12px 40px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-size: 18px;
+      text-transform: uppercase;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+
+    .hero .btn:hover {
+      background-color: #D35400;
+    }
+
+    /* Courses Section */
+    .courses {
+      display: flex;
+      justify-content: space-between;
+      margin: 60px 20px;
+    }
+
+    .course {
+      background-color: #FFFFFF; /* White cards */
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      width: 30%;
+      border-radius: 8px;
+      padding: 30px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .course:hover {
+      transform: translateY(-10px); /* Lift effect on hover */
+    }
+
+    .course img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+
+    .course h3 {
+      font-size: 24px;
+      margin: 20px 0;
+      color: #34495E;
+    }
+
+    .course p {
+      font-size: 16px;
+      color: #7F8C8D;
+    }
+
+    .course .btn {
+      background-color: #E67E22;
+      color: #ECF0F1;
+      padding: 10px 25px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      letter-spacing: 1px;
+      margin-top: 20px;
+    }
+
+    .course .btn:hover {
+      background-color: #D35400;
+    }
+
+    /* Testimonials Section */
+    .testimonials {
+      background-color: #ECF0F1;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .testimonials h2 {
+      font-size: 36px;
+      margin-bottom: 30px;
+      color: #34495E;
+    }
+
+    .testimonial {
+      display: inline-block;
+      background-color: #FFFFFF;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      padding: 40px;
+      width: 300px;
+      margin: 10px;
+      border-radius: 8px;
+    }
+
+    .testimonial p {
+      font-size: 16px;
+      color: #7F8C8D;
+      margin-bottom: 20px;
+    }
+
+    .testimonial .author {
+      font-weight: 600;
+      color: #34495E;
+    }
+
+    /* Footer Section */
+    footer {
+      background-color: #2C3E50;
+      color: #ECF0F1;
+      text-align: center;
+      padding: 30px;
+      margin-top: 50px;
+    }
+
+    footer p {
+      font-size: 16px;
+    }
+
+    footer a {
+      color: #E67E22;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: #D35400;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Online Learning Platform</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Courses</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Master New Skills at Your Own Pace</h2>
+    <p>Join thousands of students learning and growing with us. We offer expert-led courses in a variety of fields.</p>
+    <a href="#" class="btn">Explore Courses</a>
+  </section>
+
+  <section class="courses">
+    <div class="course">
+      <img src="https://via.placeholder.com/300" alt="Course 1">
+      <h3>Web Development</h3>
+      <p>Learn to build responsive websites with modern technologies.</p>
+      <a href="#" class="btn">Learn More</a>
+    </div>
+    <div class="course">
+      <img src="https://via.placeholder.com/300" alt="Course 2">
+      <h3>Data Science</h3>
+      <p>Become a data expert and unlock the world of data analysis.</p>
+      <a href="#" class="btn">Learn More</a>
+    </div>
+    <div class="course">
+      <img src="https://via.placeholder.com/300" alt="Course 3">
+      <h3>Digital Marketing</h3>
+      <p>Master the art of online marketing and grow your brand.</p>
+      <a href="#" class="btn">Learn More</a>
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <h2>What Our Students Say</h2>
+    <div class="testimonial">
+      <p>"This platform has changed the way I learn. The courses are easy to follow and have helped me advance my career!"</p>
+      <div class="author">John Doe</div>
+    </div>
+    <div class="testimonial">
+      <p>"I love the flexibility of learning at my own pace. The course materials are top-notch!"</p>
+      <div class="author">Jane Smith</div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Online Learning. All rights reserved.</p>
+    <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+  </footer>
+
+</body>
+</html>
