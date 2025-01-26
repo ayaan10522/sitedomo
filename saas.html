@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaaS Platform</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+            color: #333;
+        }
+        header {
+            background: #1a1a2e;
+            padding: 20px 50px;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        header h1 {
+            font-size: 2.5rem;
+            color: #FFD369;
+        }
+        header nav a {
+            text-decoration: none;
+            color: #E0E0E0;
+            margin: 0 15px;
+            font-size: 1rem;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        header nav a:hover {
+            color: #FFD369;
+        }
+        .hero {
+            background: #1f4068;
+            color: #fff;
+            text-align: center;
+            padding: 100px 20px;
+            clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+        }
+        .hero h2 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            color: #FFD369;
+        }
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 30px;
+            color: #E0E0E0;
+        }
+        .hero button {
+            background: #FFD369;
+            border: none;
+            color: #1a1a2e;
+            font-size: 1rem;
+            padding: 12px 25px;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+        .hero button:hover {
+            background: #ffc947;
+            transform: scale(1.05);
+        }
+        .features {
+            padding: 60px 20px;
+            text-align: center;
+            background: #fff;
+            color: #333;
+        }
+        .features h3 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #1f4068;
+        }
+        .features p {
+            font-size: 1rem;
+            max-width: 800px;
+            margin: 0 auto 40px;
+            line-height: 1.6;
+        }
+        .feature-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .feature-card {
+            background: #c3cfe2;
+            padding: 20px;
+            border-radius: 15px;
+            width: 300px;
+            text-align: left;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+        }
+        .feature-card h4 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #1a1a2e;
+        }
+        .feature-card p {
+            font-size: 0.9rem;
+            color: #444;
+        }
+        .pricing {
+            background: #1a1a2e;
+            padding: 60px 20px;
+            color: #E0E0E0;
+            text-align: center;
+        }
+        .pricing h3 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: #FFD369;
+        }
+        .pricing-grid {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .pricing-card {
+            background: #2c3e50;
+            padding: 20px;
+            border-radius: 15px;
+            width: 300px;
+            color: #E0E0E0;
+            text-align: center;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .pricing-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+        }
+        .pricing-card h4 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: #FFD369;
+        }
+        .pricing-card p {
+            font-size: 1rem;
+            margin-bottom: 20px;
+        }
+        .pricing-card button {
+            background: #FFD369;
+            border: none;
+            color: #1a1a2e;
+            font-size: 1rem;
+            padding: 10px 20px;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+        .pricing-card button:hover {
+            background: #ffc947;
+            transform: scale(1.05);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #1f4068;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>SaaSPro</h1>
+        <nav>
+            <a href="#features">Features</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Streamline Your Business</h2>
+        <p>Transform the way you work with cutting-edge software solutions for productivity and growth.</p>
+        <button>Get Started</button>
+    </section>
+
+    <section id="features" class="features">
+        <h3>Powerful Features</h3>
+        <p>Our SaaS platform offers intuitive tools and features designed to simplify your workflow and boost your results.</p>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <h4>Automation</h4>
+                <p>Save time with automated workflows and processes tailored to your business.</p>
+            </div>
+            <div class="feature-card">
+                <h4>Analytics</h4>
+                <p>Track your performance with real-time data and actionable insights.</p>
+            </div>
+            <div class="feature-card">
+                <h4>Collaboration</h4>
+                <p>Boost team productivity with seamless communication and file sharing.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="pricing">
+        <h3>Flexible Pricing Plans</h3>
+        <div class="pricing-grid">
+            <div class="pricing-card">
+                <h4>Basic</h4>
+                <p>Ideal for small businesses starting their SaaS journey.</p>
+                <button>Choose Plan</button>
+            </div>
+            <div class="pricing-card">
+                <h4>Pro</h4>
+                <p>Perfect for growing businesses looking to scale up.</p>
+                <button>Choose Plan</button>
+            </div>
+            <div class="pricing-card">
+                <h4>Enterprise</h4>
+                <p>Designed for large businesses with advanced needs.</p>
+                <button>Choose Plan</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 SaaSPro. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
+
