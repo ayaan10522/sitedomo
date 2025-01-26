@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>University</title>
+  <style>
+    /* Reset some default styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Body and background color */
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #F7F7F7; /* Light neutral background */
+      color: #333; /* Dark text for good readability */
+      line-height: 1.6;
+    }
+
+    /* Navbar styling */
+    header {
+      background-color: #34495E; /* Dark neutral background */
+      color: #ECF0F1; /* Light text */
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      font-size: 32px;
+      font-weight: bold;
+    }
+
+    /* Navigation bar */
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      margin-top: 15px;
+    }
+
+    nav ul li {
+      margin-left: 30px;
+    }
+
+    nav ul li a {
+      color: #ECF0F1;
+      text-decoration: none;
+      font-size: 18px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    nav ul li a:hover {
+      color: #E67E22; /* Warm neutral color on hover */
+    }
+
+    /* Hero Section */
+    .hero {
+      background-color: #BDC3C7; /* Light grey-blue background */
+      color: #34495E; /* Darker text */
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .hero h2 {
+      font-size: 48px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      margin-bottom: 30px;
+      line-height: 1.5;
+    }
+
+    .hero .btn {
+      background-color: #E67E22; /* Warm neutral color */
+      color: #ECF0F1;
+      padding: 12px 40px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-size: 18px;
+      text-transform: uppercase;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+
+    .hero .btn:hover {
+      background-color: #D35400;
+    }
+
+    /* University Info Section */
+    .university-info {
+      display: flex;
+      justify-content: space-between;
+      margin: 60px 20px;
+    }
+
+    .info-box {
+      background-color: #FFFFFF; /* White cards */
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      width: 30%;
+      border-radius: 8px;
+      padding: 30px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .info-box:hover {
+      transform: translateY(-10px); /* Lift effect on hover */
+    }
+
+    .info-box h3 {
+      font-size: 24px;
+      color: #34495E;
+      margin-bottom: 20px;
+    }
+
+    .info-box p {
+      font-size: 16px;
+      color: #7F8C8D;
+    }
+
+    /* Campus Life Section */
+    .campus-life {
+      background-color: #ECF0F1;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .campus-life h2 {
+      font-size: 36px;
+      margin-bottom: 30px;
+      color: #34495E;
+    }
+
+    .campus-life .activity {
+      display: inline-block;
+      background-color: #FFFFFF;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      padding: 40px;
+      width: 300px;
+      margin: 10px;
+      border-radius: 8px;
+    }
+
+    .campus-life .activity img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+
+    .campus-life .activity h3 {
+      font-size: 24px;
+      margin: 20px 0;
+      color: #34495E;
+    }
+
+    /* Footer Section */
+    footer {
+      background-color: #34495E;
+      color: #ECF0F1;
+      text-align: center;
+      padding: 30px;
+      margin-top: 50px;
+    }
+
+    footer p {
+      font-size: 16px;
+    }
+
+    footer a {
+      color: #E67E22;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: #D35400;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Our University</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Academics</a></li>
+        <li><a href="#">Campus Life</a></li>
+        <li><a href="#">Admissions</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Welcome to Our Prestigious University</h2>
+    <p>Providing world-class education and fostering a community of excellence.</p>
+    <a href="#" class="btn">Explore Programs</a>
+  </section>
+
+  <section class="university-info">
+    <div class="info-box">
+      <h3>Academic Excellence</h3>
+      <p>We offer a wide range of degree programs, research opportunities, and expert faculty to help you succeed.</p>
+    </div>
+    <div class="info-box">
+      <h3>Global Community</h3>
+      <p>Join a diverse community of students, scholars, and professionals from around the world.</p>
+    </div>
+    <div class="info-box">
+      <h3>State-of-the-Art Facilities</h3>
+      <p>Our campus boasts cutting-edge facilities, from modern classrooms to innovation labs.</p>
+    </div>
+  </section>
+
+  <section class="campus-life">
+    <h2>Campus Life</h2>
+    <div class="activity">
+      <img src="https://via.placeholder.com/300" alt="Student Activity">
+      <h3>Student Clubs</h3>
+      <p>Explore a variety of student organizations and extracurricular activities.</p>
+    </div>
+    <div class="activity">
+      <img src="https://via.placeholder.com/300" alt="Sports">
+      <h3>Sports & Recreation</h3>
+      <p>Stay active and engaged with our top-tier sports facilities and intramural leagues.</p>
+    </div>
+    <div class="activity">
+      <img src="https://via.placeholder.com/300" alt="Events">
+      <h3>University Events</h3>
+      <p>Attend lectures, seminars, cultural events, and more throughout the academic year.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Our University. All rights reserved.</p>
+    <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+  </footer>
+
+</body>
+</html>
