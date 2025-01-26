@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Academic Research</title>
+  <style>
+    /* Reset some default styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Body and background color */
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #F1F1F1; /* Light grey background for a clean feel */
+      color: #333333; /* Dark grey text for contrast */
+      line-height: 1.6;
+    }
+
+    /* Header Section */
+    header {
+      background-color: #2C3E50; /* Dark blue-grey for professionalism */
+      color: #FFFFFF; /* White text for contrast */
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 48px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 20px;
+      font-weight: 400;
+    }
+
+    /* Navigation */
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+    }
+
+    nav ul li {
+      margin-left: 30px;
+    }
+
+    nav ul li a {
+      color: #F1F1F1;
+      text-decoration: none;
+      font-size: 18px;
+      padding-bottom: 5px;
+      letter-spacing: 1px;
+      transition: color 0.3s ease, border-bottom 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #2980B9; /* Bright blue hover effect */
+      border-bottom: 2px solid #2980B9;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(45deg, #BDC3C7, #2C3E50); /* Soft gradient from light grey to dark blue */
+      color: #FFFFFF;
+      text-align: center;
+      padding: 100px 20px;
+      border-bottom: 4px solid #2980B9;
+    }
+
+    .hero h2 {
+      font-size: 50px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+
+    .hero p {
+      font-size: 22px;
+      margin-bottom: 30px;
+      line-height: 1.5;
+    }
+
+    .hero .btn {
+      background-color: #2980B9; /* Bright blue button */
+      color: #FFFFFF;
+      padding: 15px 40px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      transition: background-color 0.3s ease;
+    }
+
+    .hero .btn:hover {
+      background-color: #3498DB; /* Lighter blue on hover */
+    }
+
+    /* Research Areas Section */
+    .research-areas {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin: 60px 20px;
+    }
+
+    .area-box {
+      background-color: #E8F1F5; /* Light, soft background for the research areas */
+      width: 30%;
+      margin-bottom: 30px;
+      padding: 40px;
+      text-align: center;
+      border-radius: 10px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .area-box:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .area-box h3 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: #2C3E50; /* Dark text for headings */
+    }
+
+    .area-box p {
+      font-size: 16px;
+      color: #555555; /* Light grey text for descriptions */
+    }
+
+    /* Academic Publications Section */
+    .publications {
+      background-color: #34495E; /* Darker blue background */
+      color: #FFFFFF;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .publications h2 {
+      font-size: 36px;
+      margin-bottom: 30px;
+      text-transform: uppercase;
+    }
+
+    .publication-card {
+      background-color: #2C3E50;
+      padding: 40px;
+      width: 300px;
+      margin: 20px;
+      border-radius: 10px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .publication-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .publication-card h3 {
+      font-size: 24px;
+      margin-bottom: 15px;
+      color: #F1F1F1;
+    }
+
+    .publication-card p {
+      font-size: 16px;
+      color: #BDC3C7;
+    }
+
+    /* Footer Section */
+    footer {
+      background-color: #2C3E50; /* Dark footer background */
+      color: #BDC3C7; /* Light text color */
+      text-align: center;
+      padding: 30px;
+      margin-top: 50px;
+    }
+
+    footer p {
+      font-size: 16px;
+    }
+
+    footer a {
+      color: #2980B9;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: #3498DB;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Academic Research Platform</h1>
+    <p>Empowering Minds, Advancing Knowledge</p>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Research Areas</a></li>
+        <li><a href="#">Publications</a></li>
+        <li><a href="#">Conferences</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Explore Cutting-Edge Research</h2>
+    <p>Join our global research community and dive into the latest in academic studies, innovations, and discoveries.</p>
+    <a href="#" class="btn">Explore Now</a>
+  </section>
+
+  <section class="research-areas">
+    <div class="area-box">
+      <h3>Artificial Intelligence</h3>
+      <p>Explore the future of computing with machine learning, neural networks, and AI technologies.</p>
+    </div>
+    <div class="area-box">
+      <h3>Quantum Computing</h3>
+      <p>Dive deep into the world of quantum mechanics and cutting-edge computing power.</p>
+    </div>
+    <div class="area-box">
+      <h3>Environmental Science</h3>
+      <p>Research new sustainable practices and technologies for a healthier planet.</p>
+    </div>
+  </section>
+
+  <section class="publications">
+    <h2>Our Latest Publications</h2>
+    <div class="publication-card">
+      <h3>AI in Healthcare</h3>
+      <p>An in-depth look at how artificial intelligence is transforming healthcare systems globally.</p>
+    </div>
+    <div class="publication-card">
+      <h3>Quantum Entanglement</h3>
+      <p>Exploring the mysterious phenomenon of quantum entanglement and its implications for future tech.</p>
+    </div>
+    <div class="publication-card">
+      <h3>Renewable Energy Breakthroughs</h3>
+      <p>Research into the latest renewable energy technologies that could change the global energy landscape.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Academic Research Platform. All rights reserved.</p>
+    <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+  </footer>
+
+</body>
+</html>
