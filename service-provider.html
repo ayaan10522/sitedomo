@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Provider</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(140deg, #6A11CB, #2575FC);
+            color: #fff;
+            overflow-x: hidden;
+        }
+        header {
+            background: #0D1321;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+        }
+        header h1 {
+            font-size: 2rem;
+            color: #6A11CB;
+        }
+        header nav a {
+            text-decoration: none;
+            color: #fff;
+            margin: 0 15px;
+            font-size: 1rem;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        header nav a:hover {
+            color: #6A11CB;
+        }
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background: radial-gradient(circle at top, #6A11CB, #2575FC);
+            color: #fff;
+            clip-path: ellipse(100% 90% at 50% 0%);
+        }
+        .hero h2 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 30px;
+        }
+        .hero button {
+            background: #2575FC;
+            border: none;
+            color: #fff;
+            font-size: 1rem;
+            padding: 12px 25px;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+        .hero button:hover {
+            background: #6A11CB;
+            transform: scale(1.05);
+        }
+        .services {
+            padding: 50px 20px;
+            text-align: center;
+            background: #0D1321;
+        }
+        .services h3 {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            color: #6A11CB;
+        }
+        .service-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .service-card {
+            background: #1B1F38;
+            padding: 20px;
+            border-radius: 15px;
+            width: 300px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+            color: #fff;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .service-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+        }
+        .service-card h4 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: #6A11CB;
+        }
+        .service-card p {
+            font-size: 1rem;
+            margin-bottom: 10px;
+            color: #d9e0ff;
+        }
+        .service-card button {
+            background: #2575FC;
+            border: none;
+            color: #fff;
+            font-size: 0.9rem;
+            padding: 10px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+        .service-card button:hover {
+            background: #6A11CB;
+            transform: scale(1.05);
+        }
+        .cta {
+            background: linear-gradient(140deg, #6A11CB, #2575FC);
+            padding: 50px 20px;
+            text-align: center;
+            margin-top: 50px;
+            color: #fff;
+        }
+        .cta h3 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .cta a {
+            background: #fff;
+            color: #2575FC;
+            padding: 12px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: bold;
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+        .cta a:hover {
+            background: #2575FC;
+            color: #fff;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #0D1321;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ServicePro</h1>
+        <nav>
+            <a href="#services">Services</a>
+            <a href="#cta">Contact</a>
+            <a href="#about">About</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Your Trusted Service Partner</h2>
+        <p>Providing top-notch solutions for all your needs. Fast, reliable, and affordable services at your fingertips.</p>
+        <button>Get Started Today</button>
+    </section>
+
+    <section id="services" class="services">
+        <h3>Our Services</h3>
+        <div class="service-grid">
+            <div class="service-card">
+                <h4>IT Support</h4>
+                <p>Round-the-clock tech support to keep your systems running smoothly.</p>
+                <button>Learn More</button>
+            </div>
+            <div class="service-card">
+                <h4>Web Development</h4>
+                <p>Custom websites designed to grow your business and engage users.</p>
+                <button>Learn More</button>
+            </div>
+            <div class="service-card">
+                <h4>Digital Marketing</h4>
+                <p>Boost your online presence and drive traffic with our expertise.</p>
+                <button>Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="cta" class="cta">
+        <h3>Need Our Services?</h3>
+        <a href="#">Contact Us Today</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 ServicePro. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
