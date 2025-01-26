@@ -3,104 +3,106 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Academic Research</title>
+  <title>Academic Research Platform</title>
   <style>
-    /* Reset some default styles */
+    /* Resetting default styles */
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
 
-    /* Body and background color */
     body {
       font-family: 'Arial', sans-serif;
-      background-color: #F1F1F1; /* Light grey background for a clean feel */
-      color: #333333; /* Dark grey text for contrast */
+      background-color: #F4F6F7; /* Light background for contrast */
+      color: #333;
       line-height: 1.6;
+      overflow-x: hidden;
     }
 
     /* Header Section */
     header {
-      background-color: #2C3E50; /* Dark blue-grey for professionalism */
-      color: #FFFFFF; /* White text for contrast */
-      padding: 40px 20px;
+      background-color: #212F3C; /* Dark teal */
+      color: #fff;
+      padding: 60px 20px;
       text-align: center;
+      position: relative;
+      z-index: 1;
     }
 
     header h1 {
-      font-size: 48px;
-      font-weight: bold;
+      font-size: 50px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 3px;
       margin-bottom: 10px;
     }
 
     header p {
       font-size: 20px;
-      font-weight: 400;
+      font-weight: 300;
+      margin-bottom: 40px;
     }
 
-    /* Navigation */
     nav ul {
       list-style: none;
       display: flex;
       justify-content: center;
-      margin-top: 30px;
+      margin-top: 20px;
     }
 
     nav ul li {
-      margin-left: 30px;
+      margin-left: 40px;
     }
 
     nav ul li a {
-      color: #F1F1F1;
+      color: #F4F6F7;
       text-decoration: none;
       font-size: 18px;
-      padding-bottom: 5px;
+      font-weight: 500;
+      text-transform: uppercase;
       letter-spacing: 1px;
-      transition: color 0.3s ease, border-bottom 0.3s ease;
+      transition: color 0.3s ease;
     }
 
     nav ul li a:hover {
-      color: #2980B9; /* Bright blue hover effect */
-      border-bottom: 2px solid #2980B9;
+      color: #F39C12; /* Bright yellow for hover */
     }
 
     /* Hero Section */
     .hero {
-      background: linear-gradient(45deg, #BDC3C7, #2C3E50); /* Soft gradient from light grey to dark blue */
-      color: #FFFFFF;
+      background: linear-gradient(120deg, #3498DB, #1ABC9C); /* Bright, fresh gradient */
+      color: #fff;
       text-align: center;
-      padding: 100px 20px;
-      border-bottom: 4px solid #2980B9;
+      padding: 120px 20px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
     }
 
     .hero h2 {
-      font-size: 50px;
-      font-weight: 700;
+      font-size: 60px;
       margin-bottom: 20px;
-      text-transform: uppercase;
+      font-weight: 900;
     }
 
     .hero p {
-      font-size: 22px;
+      font-size: 24px;
       margin-bottom: 30px;
-      line-height: 1.5;
     }
 
     .hero .btn {
-      background-color: #2980B9; /* Bright blue button */
-      color: #FFFFFF;
+      background-color: #F39C12; /* Yellow button */
+      color: #fff;
       padding: 15px 40px;
       border-radius: 50px;
       text-decoration: none;
       font-size: 18px;
       font-weight: 600;
       letter-spacing: 1px;
-      transition: background-color 0.3s ease;
+      transition: background-color 0.3s;
     }
 
     .hero .btn:hover {
-      background-color: #3498DB; /* Lighter blue on hover */
+      background-color: #F1C40F;
     }
 
     /* Research Areas Section */
@@ -109,82 +111,85 @@
       justify-content: space-between;
       flex-wrap: wrap;
       margin: 60px 20px;
+      gap: 20px;
     }
 
     .area-box {
-      background-color: #E8F1F5; /* Light, soft background for the research areas */
+      background-color: #FFFFFF;
       width: 30%;
-      margin-bottom: 30px;
       padding: 40px;
       text-align: center;
-      border-radius: 10px;
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+      border-radius: 15px;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
     .area-box:hover {
       transform: translateY(-10px);
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
     }
 
     .area-box h3 {
-      font-size: 28px;
-      margin-bottom: 20px;
-      color: #2C3E50; /* Dark text for headings */
+      font-size: 32px;
+      margin-bottom: 15px;
+      color: #1ABC9C;
+      font-weight: 600;
     }
 
     .area-box p {
-      font-size: 16px;
-      color: #555555; /* Light grey text for descriptions */
+      font-size: 18px;
+      color: #7F8C8D;
     }
 
-    /* Academic Publications Section */
+    /* Publication Section */
     .publications {
-      background-color: #34495E; /* Darker blue background */
-      color: #FFFFFF;
+      background-color: #34495E; /* Dark blue-grey */
+      color: #fff;
       padding: 80px 20px;
       text-align: center;
     }
 
     .publications h2 {
-      font-size: 36px;
-      margin-bottom: 30px;
+      font-size: 40px;
+      margin-bottom: 40px;
       text-transform: uppercase;
+      font-weight: 700;
     }
 
     .publication-card {
-      background-color: #2C3E50;
+      background-color: #1ABC9C;
+      width: 280px;
       padding: 40px;
-      width: 300px;
       margin: 20px;
       border-radius: 10px;
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-align: left;
     }
 
     .publication-card:hover {
       transform: translateY(-10px);
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
     }
 
     .publication-card h3 {
       font-size: 24px;
+      color: #fff;
       margin-bottom: 15px;
-      color: #F1F1F1;
     }
 
     .publication-card p {
       font-size: 16px;
-      color: #BDC3C7;
+      color: #ECF0F1;
     }
 
     /* Footer Section */
     footer {
-      background-color: #2C3E50; /* Dark footer background */
-      color: #BDC3C7; /* Light text color */
+      background-color: #212F3C;
+      color: #F4F6F7;
       text-align: center;
-      padding: 30px;
-      margin-top: 50px;
+      padding: 40px 20px;
+      margin-top: 60px;
     }
 
     footer p {
@@ -192,12 +197,12 @@
     }
 
     footer a {
-      color: #2980B9;
+      color: #F39C12;
       text-decoration: none;
     }
 
     footer a:hover {
-      color: #3498DB;
+      color: #F1C40F;
     }
 
   </style>
@@ -206,52 +211,52 @@
 
   <header>
     <h1>Academic Research Platform</h1>
-    <p>Empowering Minds, Advancing Knowledge</p>
+    <p>Leading Discoveries, Connecting Minds</p>
     <nav>
       <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#">Research Areas</a></li>
         <li><a href="#">Publications</a></li>
-        <li><a href="#">Conferences</a></li>
+        <li><a href="#">Collaborations</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <section class="hero">
-    <h2>Explore Cutting-Edge Research</h2>
-    <p>Join our global research community and dive into the latest in academic studies, innovations, and discoveries.</p>
-    <a href="#" class="btn">Explore Now</a>
+    <h2>Advancing Knowledge through Research</h2>
+    <p>Join our network of researchers and contribute to groundbreaking studies across various fields.</p>
+    <a href="#" class="btn">Explore Our Research</a>
   </section>
 
   <section class="research-areas">
     <div class="area-box">
-      <h3>Artificial Intelligence</h3>
-      <p>Explore the future of computing with machine learning, neural networks, and AI technologies.</p>
+      <h3>Neuroscience</h3>
+      <p>Investigating the intricacies of the human brain and its connections to cognition, behavior, and disease.</p>
     </div>
     <div class="area-box">
-      <h3>Quantum Computing</h3>
-      <p>Dive deep into the world of quantum mechanics and cutting-edge computing power.</p>
+      <h3>Climate Change</h3>
+      <p>Exploring environmental challenges and developing sustainable solutions for the future of our planet.</p>
     </div>
     <div class="area-box">
-      <h3>Environmental Science</h3>
-      <p>Research new sustainable practices and technologies for a healthier planet.</p>
+      <h3>AI Ethics</h3>
+      <p>Understanding the ethical implications of artificial intelligence and its societal impacts.</p>
     </div>
   </section>
 
   <section class="publications">
     <h2>Our Latest Publications</h2>
     <div class="publication-card">
-      <h3>AI in Healthcare</h3>
-      <p>An in-depth look at how artificial intelligence is transforming healthcare systems globally.</p>
+      <h3>The Future of Quantum Computing</h3>
+      <p>Delving into the potentials of quantum computing to revolutionize industries and scientific research.</p>
     </div>
     <div class="publication-card">
-      <h3>Quantum Entanglement</h3>
-      <p>Exploring the mysterious phenomenon of quantum entanglement and its implications for future tech.</p>
+      <h3>Advances in Renewable Energy</h3>
+      <p>Examining innovative breakthroughs in solar, wind, and alternative energy technologies.</p>
     </div>
     <div class="publication-card">
-      <h3>Renewable Energy Breakthroughs</h3>
-      <p>Research into the latest renewable energy technologies that could change the global energy landscape.</p>
+      <h3>Human Genetic Engineering</h3>
+      <p>A critical analysis of gene editing technologies and their ethical, medical, and societal implications.</p>
     </div>
   </section>
 
